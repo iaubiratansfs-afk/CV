@@ -319,6 +319,15 @@ img {
   color: var(--gold-soft);
 }
 
+.hero h1 .nickname {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 0.55em;
+  letter-spacing: 0;
+  color: var(--on-surface-muted);
+  white-space: nowrap;
+}
+
 .hero-role {
   margin-top: 0.65rem;
   font-size: 15px;
