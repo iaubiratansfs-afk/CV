@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículo | Ubiratan Pereira Guimarães Junior · Aureum Advocacia</title>
+  <title>Ubiratan Pereira Guimarães Junior (Bira) · Aureum Advocacia</title>
+  <meta name="description" content="Advogado especialista tributário e contador. Sócio proprietário da Aureum Advocacia — gestão tributária, passivo fiscal e assessoria a empresas.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -23,122 +24,133 @@
 
   <header class="topbar">
     <div class="topbar-inner">
-      <div class="brand">
+      <a class="brand" href="#inicio">
         <span class="brand-mark">UG</span>
-        <div class="brand-copy">
-          <span class="brand-label">Currículo</span>
-          <span class="brand-status">Disponível para consultoria</span>
-        </div>
-      </div>
+        <span class="brand-name">Ubiratan Guimarães</span>
+      </a>
+
+      <nav class="nav" aria-label="Seções">
+        <a href="#sobre">Sobre</a>
+        <a href="#atuacao">Atuação</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
       <div class="topbar-actions">
         <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro e escuro" title="Alternar tema">
           <i class="fas fa-moon theme-icon-dark"></i>
           <i class="fas fa-sun theme-icon-light"></i>
         </button>
+        <a class="btn btn-primary btn-nav" href="mailto:ubiratan@aureum.adv.br">Falar agora</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
     </div>
+
+    <nav class="mobile-nav" id="mobileNav" hidden>
+      <a href="#sobre">Sobre</a>
+      <a href="#atuacao">Atuação</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#formacao">Formação</a>
+      <a href="#contato">Contato</a>
+    </nav>
   </header>
 
-  <main class="shell">
+  <main>
+    <!-- Hero -->
     <section class="hero" id="inicio">
-      <div class="hero-glow" aria-hidden="true"></div>
-
-      <div class="photo-wrap">
-        <div class="photo-ring">
-          <img src="foto.png" alt="Ubiratan Pereira Guimarães Junior">
-        </div>
-        <span class="status-chip">
-          <span class="status-dot" aria-hidden="true"></span>
-          Contencioso &amp; Consultivo
-        </span>
+      <div class="hero-media" aria-hidden="true">
+        <img src="foto.png" alt="">
+        <div class="hero-scrim"></div>
       </div>
 
-      <div class="hero-copy">
-        <div class="credential-row">
-          <span>Advogado especialista tributário</span>
-          <span class="dot" aria-hidden="true"></span>
-          <span>São Francisco do Sul, SC</span>
-        </div>
-        <h1>Ubiratan Pereira Guimarães Junior <span class="nickname">(Bira)</span></h1>
-        <p class="hero-role">Contador · Sócio Proprietário na Aureum Advocacia</p>
-        <p class="hero-lead">Mais de 24 anos unindo direito e contabilidade para soluções tributárias com excelência técnica e visão estratégica.</p>
-
-        <div class="chip-row">
-          <span class="chip">#DireitoTributário</span>
-          <span class="chip">#Aduaneiro</span>
-          <span class="chip chip-accent">#PlanejamentoTributário</span>
-          <span class="chip">#Compliance</span>
-          <span class="chip">#PassivoFiscal</span>
-        </div>
-
+      <div class="hero-content">
+        <p class="hero-brand">Aureum Advocacia</p>
+        <h1>
+          Ubiratan Pereira<br>
+          Guimarães Junior
+          <span class="nickname">(Bira)</span>
+        </h1>
+        <p class="hero-lead">Advogado especialista tributário e contador — soluções fiscais com excelência técnica e visão estratégica.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="mailto:ubiratan@aureum.adv.br">
-            <i class="fas fa-envelope"></i>
-            Contato executivo
-          </a>
-          <button class="btn btn-secondary" type="button" id="copyEmail">
-            <i class="fas fa-copy"></i>
-            Copiar e-mail
-          </button>
+          <a class="btn btn-primary" href="#contato">Agendar conversa</a>
+          <a class="btn btn-secondary" href="#experiencia">Ver trajetória</a>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#indicadores" aria-label="Rolar para o conteúdo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Indicadores -->
+    <section class="section section--tight" id="indicadores" aria-label="Indicadores">
+      <div class="wrap">
+        <div class="metrics-strip" data-animate>
+          <div class="metric-item">
+            <p class="metric-value">24+</p>
+            <p class="metric-label">Anos de experiência</p>
+          </div>
+          <div class="metric-item">
+            <p class="metric-value">9</p>
+            <p class="metric-label">Pós-graduações</p>
+          </div>
+          <div class="metric-item">
+            <p class="metric-value">5</p>
+            <p class="metric-label">MBAs</p>
+          </div>
+          <div class="metric-item">
+            <p class="metric-value">2</p>
+            <p class="metric-label">Bacharelados</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="metrics" aria-label="Indicadores">
-      <div class="section-head">
-        <h2><span class="title-bar" aria-hidden="true"></span>Indicadores de trajetória</h2>
-        <span class="section-kicker">Histórico consolidado</span>
-      </div>
-      <div class="metrics-grid">
-        <article class="metric-card" data-animate>
-          <span class="metric-rule" aria-hidden="true"></span>
-          <p class="metric-value">24+</p>
-          <p class="metric-label">Anos unindo direito e contabilidade</p>
-        </article>
-        <article class="metric-card" data-animate>
-          <span class="metric-rule" aria-hidden="true"></span>
-          <p class="metric-value">9</p>
-          <p class="metric-label">Pós-graduações especializadas</p>
-        </article>
-        <article class="metric-card" data-animate>
-          <span class="metric-rule" aria-hidden="true"></span>
-          <p class="metric-value">5</p>
-          <p class="metric-label">MBAs em gestão tributária e controladoria</p>
-        </article>
-        <article class="metric-card" data-animate>
-          <span class="metric-rule" aria-hidden="true"></span>
-          <p class="metric-value">2</p>
-          <p class="metric-label">Bacharelados — Direito e Contábeis</p>
-        </article>
+    <!-- Sobre -->
+    <section class="section" id="sobre">
+      <div class="wrap wrap--narrow">
+        <header class="section-intro" data-animate>
+          <p class="eyebrow">Sobre</p>
+          <h2>Direito e contabilidade a serviço da estratégia fiscal</h2>
+          <p class="section-lead">Mais de 24 anos unindo as duas formações para oferecer gestão tributária, otimização de carga fiscal e assessoria a empresas de comércio nacional e internacional.</p>
+        </header>
       </div>
     </section>
 
-    <div class="layout">
-      <aside class="rail">
-        <section class="glass-card" id="contato">
-          <h2 class="rail-title">Contato</h2>
-          <ul class="contact-list">
-            <li>
-              <i class="fas fa-location-dot"></i>
-              <span>São Francisco do Sul, SC</span>
-            </li>
-            <li>
-              <i class="fas fa-envelope"></i>
-              <a href="mailto:ubiratan@aureum.adv.br">ubiratan@aureum.adv.br</a>
-            </li>
-            <li>
-              <i class="fas fa-globe"></i>
-              <a href="https://aureum.adv.br" target="_blank" rel="noopener noreferrer">aureum.adv.br <span class="ext" aria-hidden="true">↗</span></a>
-            </li>
-            <li>
-              <i class="fab fa-linkedin-in"></i>
-              <a href="https://www.linkedin.com/in/advogadoespecialistatribut%C3%A1rioubiratanpereiraguimar%C3%A3esjunior/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="ext" aria-hidden="true">↗</span></a>
-            </li>
-          </ul>
-        </section>
+    <!-- Atuação -->
+    <section class="section section--alt" id="atuacao">
+      <div class="wrap">
+        <header class="section-intro" data-animate>
+          <p class="eyebrow">Áreas de atuação</p>
+          <h2>Práticas especializadas</h2>
+          <p class="section-lead">Atuação preventiva e contenciosa com visão multidisciplinar para empresas e profissionais.</p>
+        </header>
 
-        <section class="glass-card" id="competencias">
-          <h2 class="rail-title">Competências</h2>
+        <div class="feature-grid">
+          <article class="feature" data-animate>
+            <div class="feature-icon" aria-hidden="true"><i class="fas fa-gavel"></i></div>
+            <h3>Direito Tributário e Aduaneiro</h3>
+            <p>Contencioso administrativo e judicial, fiscalização federal, estadual e municipal, due diligence, compliance, diagnóstico fiscal, revisão e planejamento tributário, regimes especiais e assessoria jurídica.</p>
+          </article>
+
+          <article class="feature" data-animate>
+            <div class="feature-icon" aria-hidden="true"><i class="fas fa-scale-balanced"></i></div>
+            <h3>Gestão de Passivo Fiscal</h3>
+            <p>Parcelamentos e transações (REFIS, PERT, PRT, PGFN), regularização de débitos, certidões negativas, equalização de passivo fiscal e recuperação de créditos tributários.</p>
+          </article>
+
+          <article class="feature" data-animate>
+            <div class="feature-icon" aria-hidden="true"><i class="fas fa-building"></i></div>
+            <h3>Empresarial, Penal Tributário e Previdenciário</h3>
+            <p>Assessoria jurídica integrada nas áreas empresarial, penal tributário e previdenciária, com visão multidisciplinar para empresas e profissionais.</p>
+          </article>
+        </div>
+
+        <div class="competencias" data-animate>
+          <p class="eyebrow">Competências</p>
           <div class="badge-stack">
             <span class="badge">Direito Tributário e Aduaneiro</span>
             <span class="badge">Gestão de Passivo Fiscal</span>
@@ -148,189 +160,183 @@
             <span class="badge">Penal Tributário</span>
             <span class="badge">Direito Previdenciário</span>
           </div>
-        </section>
-
-        <section class="glass-card" id="idiomas">
-          <h2 class="rail-title">Idiomas</h2>
-          <div class="lang-row">
-            <div class="lang-meta">
-              <strong>Português</strong>
-              <span>Nativo</span>
-            </div>
-            <div class="lang-bar"><span data-level="100"></span></div>
-          </div>
-          <div class="lang-row">
-            <div class="lang-meta">
-              <strong>Inglês</strong>
-              <span>Intermediário</span>
-            </div>
-            <div class="lang-bar"><span data-level="70"></span></div>
-          </div>
-          <div class="lang-row">
-            <div class="lang-meta">
-              <strong>Espanhol</strong>
-              <span>Básico</span>
-            </div>
-            <div class="lang-bar"><span data-level="40"></span></div>
-          </div>
-        </section>
-
-        <section class="glass-card" id="cursos">
-          <h2 class="rail-title">Cursos e certificações</h2>
-          <p class="rail-kicker">9 pós-graduações</p>
-          <ul class="plain-list">
-            <li>Direito Tributário</li>
-            <li>Direito Aduaneiro e Comércio Exterior</li>
-            <li>Contabilidade com Ênfase em Tributos</li>
-            <li>Contabilidade, Perícia e Auditoria</li>
-            <li>Direito Previdenciário</li>
-            <li>Direito Aplicado</li>
-            <li>Direito Constitucional</li>
-            <li>Estatística Aplicada</li>
-            <li>Mercado Financeiro e Banking</li>
-          </ul>
-          <p class="rail-kicker">5 MBAs</p>
-          <ul class="plain-list">
-            <li>Gestão Tributária e Contábil</li>
-            <li>Gestão Estratégica Tributária</li>
-            <li>Planejamento Tributário</li>
-            <li>Comércio Exterior</li>
-            <li>Controladoria</li>
-          </ul>
-        </section>
-      </aside>
-
-      <div class="content">
-        <section class="chapter" id="objetivos">
-          <div class="section-head">
-            <h2><span class="title-bar" aria-hidden="true"></span>Objetivos</h2>
-          </div>
-          <div class="glass-card glass-card--inset">
-            <p>Mais de 24 anos de experiência unindo direito e contabilidade para oferecer soluções tributárias com excelência. Atuação em gestão tributária, otimização de carga fiscal e assessoria a empresas de comércio nacional e internacional.</p>
-          </div>
-        </section>
-
-        <section class="chapter" id="experiencia">
-          <div class="section-head">
-            <h2><span class="title-bar" aria-hidden="true"></span>Experiência profissional</h2>
-            <span class="section-kicker">Trajetória executiva</span>
-          </div>
-
-          <div class="timeline">
-            <article class="timeline-item" data-animate>
-              <span class="timeline-node" aria-hidden="true"></span>
-              <div class="glass-card job">
-                <span class="job-date">Atual</span>
-                <h3>Sócio Proprietário</h3>
-                <p class="job-place">Aureum Advocacia · Joinville, SC</p>
-                <p>Fundador e sócio da Aureum Advocacia, escritório especializado em gestão tributária eficiente e otimização de carga fiscal. Atuação em direito tributário, aduaneiro, gestão de passivo fiscal, parcelamentos, transações, compliance tributário, due diligence e penal tributário para empresas de comércio nacional e internacional.</p>
-              </div>
-            </article>
-
-            <article class="timeline-item" data-animate>
-              <span class="timeline-node" aria-hidden="true"></span>
-              <div class="glass-card job">
-                <span class="job-date">2013 — 2021</span>
-                <h3>Advogado Tributarista</h3>
-                <p class="job-place">Martinelli Advocacia Empresarial · Joinville e Região, SC</p>
-                <p>Atuação como advogado tributarista em escritório de grande porte, com foco em contencioso administrativo e judicial, planejamento tributário, recuperação de tributos, due diligence e assessoria a empresas de diversos segmentos.</p>
-              </div>
-            </article>
-
-            <article class="timeline-item" data-animate>
-              <span class="timeline-node timeline-node--muted" aria-hidden="true"></span>
-              <div class="glass-card job">
-                <span class="job-date">Trajetória anterior</span>
-                <h3>Advogado e Contador</h3>
-                <p class="job-place">Advocacia, Auditoria e Consultoria</p>
-                <p>Mais de duas décadas de experiência acumulada em escritórios de advocacia, empresas de auditoria, consultoria e empresas em geral, com atualização profissional constante nas áreas jurídica, contábil e tributária.</p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="chapter" id="formacao">
-          <div class="section-head">
-            <h2><span class="title-bar" aria-hidden="true"></span>Formação acadêmica</h2>
-          </div>
-          <div class="stack">
-            <article class="glass-card edu" data-animate>
-              <div class="edu-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
-              <div>
-                <div class="job-head">
-                  <h3>Bacharelado em Direito</h3>
-                  <span class="job-date">2003</span>
-                </div>
-                <p class="job-place">Universidade do Vale do Itajaí — UNIVALI</p>
-                <p>Formação jurídica com base para atuação em direito tributário, empresarial, penal tributário e previdenciário.</p>
-              </div>
-            </article>
-
-            <article class="glass-card edu" data-animate>
-              <div class="edu-icon" aria-hidden="true"><i class="fas fa-calculator"></i></div>
-              <div>
-                <div class="job-head">
-                  <h3>Bacharelado em Ciências Contábeis</h3>
-                  <span class="job-date">2012</span>
-                </div>
-                <p class="job-place">Anhanguera Educacional — Passo Fundo</p>
-                <p>Formação contábil com ênfase em tributos, perícia, auditoria e gestão fiscal empresarial.</p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="chapter" id="atuacao">
-          <div class="section-head">
-            <h2><span class="title-bar" aria-hidden="true"></span>Áreas de atuação</h2>
-            <span class="section-kicker">Práticas especializadas</span>
-          </div>
-          <div class="stack">
-            <article class="glass-card practice" data-animate>
-              <div class="edu-icon" aria-hidden="true"><i class="fas fa-gavel"></i></div>
-              <div>
-                <h3>Direito Tributário e Aduaneiro</h3>
-                <p>Contencioso administrativo e judicial, fiscalização federal, estadual e municipal, due diligence, compliance, diagnóstico fiscal, revisão e planejamento tributário, regimes especiais e assessoria jurídica.</p>
-                <div class="practice-tags">
-                  <span>Contencioso</span>
-                  <span>Planejamento</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="glass-card practice" data-animate>
-              <div class="edu-icon" aria-hidden="true"><i class="fas fa-scale-balanced"></i></div>
-              <div>
-                <h3>Gestão de Passivo Fiscal</h3>
-                <p>Parcelamentos e transações (REFIS, PERT, PRT, PGFN), regularização de débitos, certidões negativas, equalização de passivo fiscal e recuperação de créditos tributários.</p>
-                <div class="practice-tags">
-                  <span>Transações</span>
-                  <span>Créditos fiscais</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="glass-card practice" data-animate>
-              <div class="edu-icon" aria-hidden="true"><i class="fas fa-building"></i></div>
-              <div>
-                <h3>Direito Empresarial, Penal Tributário e Previdenciário</h3>
-                <p>Assessoria jurídica integrada nas áreas empresarial, penal tributário e previdenciária, com visão multidisciplinar para empresas e profissionais.</p>
-                <div class="practice-tags">
-                  <span>Empresarial</span>
-                  <span>Multidisciplinar</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <footer class="colophon">
-          <div class="divider" aria-hidden="true"></div>
-          <p>© 2026 Ubiratan Pereira Guimarães Junior · Aureum Advocacia</p>
-        </footer>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Experiência -->
+    <section class="section" id="experiencia">
+      <div class="wrap wrap--readable">
+        <header class="section-intro" data-animate>
+          <p class="eyebrow">Experiência</p>
+          <h2>Trajetória profissional</h2>
+          <p class="section-lead">Da advocacia empresarial à fundação da Aureum Advocacia.</p>
+        </header>
+
+        <div class="timeline">
+          <article class="timeline-item" data-animate>
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="job-date">Atual</span>
+              <h3>Sócio Proprietário</h3>
+              <p class="job-place">Aureum Advocacia · Joinville, SC</p>
+              <p>Fundador e sócio da Aureum Advocacia, escritório especializado em gestão tributária eficiente e otimização de carga fiscal. Atuação em direito tributário, aduaneiro, gestão de passivo fiscal, parcelamentos, transações, compliance tributário, due diligence e penal tributário para empresas de comércio nacional e internacional.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-animate>
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="job-date">2013 — 2021</span>
+              <h3>Advogado Tributarista</h3>
+              <p class="job-place">Martinelli Advocacia Empresarial · Joinville e Região, SC</p>
+              <p>Atuação como advogado tributarista em escritório de grande porte, com foco em contencioso administrativo e judicial, planejamento tributário, recuperação de tributos, due diligence e assessoria a empresas de diversos segmentos.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-animate>
+            <span class="timeline-node timeline-node--muted" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="job-date">Trajetória anterior</span>
+              <h3>Advogado e Contador</h3>
+              <p class="job-place">Advocacia, Auditoria e Consultoria</p>
+              <p>Mais de duas décadas de experiência acumulada em escritórios de advocacia, empresas de auditoria, consultoria e empresas em geral, com atualização profissional constante nas áreas jurídica, contábil e tributária.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formação -->
+    <section class="section section--alt" id="formacao">
+      <div class="wrap">
+        <header class="section-intro" data-animate>
+          <p class="eyebrow">Formação</p>
+          <h2>Base acadêmica e especializações</h2>
+          <p class="section-lead">Duas formações de graduação e um portfólio contínuo de pós-graduações e MBAs.</p>
+        </header>
+
+        <div class="edu-grid">
+          <article class="edu-card" data-animate>
+            <span class="job-date">2003</span>
+            <h3>Bacharelado em Direito</h3>
+            <p class="job-place">Universidade do Vale do Itajaí — UNIVALI</p>
+            <p>Formação jurídica com base para atuação em direito tributário, empresarial, penal tributário e previdenciário.</p>
+          </article>
+
+          <article class="edu-card" data-animate>
+            <span class="job-date">2012</span>
+            <h3>Bacharelado em Ciências Contábeis</h3>
+            <p class="job-place">Anhanguera Educacional — Passo Fundo</p>
+            <p>Formação contábil com ênfase em tributos, perícia, auditoria e gestão fiscal empresarial.</p>
+          </article>
+        </div>
+
+        <div class="creds-grid" id="cursos">
+          <div class="creds-block" data-animate>
+            <p class="rail-kicker">9 pós-graduações</p>
+            <ul class="plain-list">
+              <li>Direito Tributário</li>
+              <li>Direito Aduaneiro e Comércio Exterior</li>
+              <li>Contabilidade com Ênfase em Tributos</li>
+              <li>Contabilidade, Perícia e Auditoria</li>
+              <li>Direito Previdenciário</li>
+              <li>Direito Aplicado</li>
+              <li>Direito Constitucional</li>
+              <li>Estatística Aplicada</li>
+              <li>Mercado Financeiro e Banking</li>
+            </ul>
+          </div>
+          <div class="creds-block" data-animate>
+            <p class="rail-kicker">5 MBAs</p>
+            <ul class="plain-list">
+              <li>Gestão Tributária e Contábil</li>
+              <li>Gestão Estratégica Tributária</li>
+              <li>Planejamento Tributário</li>
+              <li>Comércio Exterior</li>
+              <li>Controladoria</li>
+            </ul>
+          </div>
+          <div class="creds-block" id="idiomas" data-animate>
+            <p class="rail-kicker">Idiomas</p>
+            <div class="lang-row">
+              <div class="lang-meta">
+                <strong>Português</strong>
+                <span>Nativo</span>
+              </div>
+              <div class="lang-bar"><span data-level="100"></span></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-meta">
+                <strong>Inglês</strong>
+                <span>Intermediário</span>
+              </div>
+              <div class="lang-bar"><span data-level="70"></span></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-meta">
+                <strong>Espanhol</strong>
+                <span>Básico</span>
+              </div>
+              <div class="lang-bar"><span data-level="40"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section section--cta" id="contato">
+      <div class="wrap wrap--narrow">
+        <header class="section-intro section-intro--center" data-animate>
+          <p class="eyebrow">Contato</p>
+          <h2>Vamos conversar sobre o seu desafio fiscal</h2>
+          <p class="section-lead">Disponível para consultoria estratégica, gestão de passivo e assessoria tributária a empresas.</p>
+        </header>
+
+        <div class="cta-panel" data-animate>
+          <div class="cta-row cta-row--center">
+            <a class="btn btn-primary" href="mailto:ubiratan@aureum.adv.br">
+              <i class="fas fa-envelope"></i>
+              ubiratan@aureum.adv.br
+            </a>
+            <button class="btn btn-secondary" type="button" id="copyEmail">
+              <i class="fas fa-copy"></i>
+              Copiar e-mail
+            </button>
+          </div>
+
+          <ul class="contact-links">
+            <li>
+              <i class="fas fa-location-dot"></i>
+              São Francisco do Sul, SC
+            </li>
+            <li>
+              <a href="https://aureum.adv.br" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-globe"></i>
+                aureum.adv.br
+                <span class="ext" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/advogadoespecialistatribut%C3%A1rioubiratanpereiraguimar%C3%A3esjunior/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+                LinkedIn
+                <span class="ext" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="divider" aria-hidden="true"></div>
+      <p>© 2026 Ubiratan Pereira Guimarães Junior (Bira) · Aureum Advocacia</p>
+    </div>
+  </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite">
     <i class="fas fa-check-circle"></i>

@@ -13,6 +13,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const navToggle = document.getElementById('navToggle');
+  const mobileNav = document.getElementById('mobileNav');
+
+  if (navToggle && mobileNav) {
+    navToggle.addEventListener('click', () => {
+      const open = mobileNav.hasAttribute('hidden');
+      if (open) {
+        mobileNav.removeAttribute('hidden');
+        navToggle.setAttribute('aria-expanded', 'true');
+        navToggle.setAttribute('aria-label', 'Fechar menu');
+        navToggle.innerHTML = '<i class="fas fa-xmark"></i>';
+      } else {
+        mobileNav.setAttribute('hidden', '');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Abrir menu');
+        navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+      }
+    });
+
+    mobileNav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileNav.setAttribute('hidden', '');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Abrir menu');
+        navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+      });
+    });
+  }
+
   const toast = document.getElementById('toast');
   const toastMsg = document.getElementById('toastMsg');
   let toastTimer;
@@ -37,6 +66,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const sectionIds = ['sobre', 'atuacao', 'experiencia', 'formacao', 'contato'];
+  const navLinks = document.querySelectorAll('.nav a');
+
+  const setActiveNav = () => {
+    let current = '';
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (el.getBoundingClientRect().top <= 140) current = id;
+    });
+    navLinks.forEach((link) => {
+      const href = link.getAttribute('href') || '';
+      link.classList.toggle('active', href === `#${current}`);
+    });
+  };
+
+  window.addEventListener('scroll', setActiveNav, { passive: true });
+  setActiveNav();
+
   const bars = document.querySelectorAll('.lang-bar span');
   const fillBars = () => {
     bars.forEach((bar) => {
@@ -57,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
       entry.target.classList.add('visible');
       observer.unobserve(entry.target);
     });
-  }, { threshold: 0.16, rootMargin: '0px 0px -32px 0px' });
+  }, { threshold: 0.14, rootMargin: '0px 0px -40px 0px' });
 
   reveal.forEach((el) => observer.observe(el));
 
